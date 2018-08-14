@@ -5,9 +5,10 @@ matchzoo运行流程:
 2、preprocess.py: 处理sample.txt将生成corpus.txt, corpus_preprocessed.txt, relation.txt,
    word_dict.txt, word_stats.txt
    
-3、wiki_generator.py: 依赖word_dict.txt, 将w2c转换为<word_id, vector>形式
+3、wiki_generator.py: 依赖word_dict.txt, 将w2c文件wiki_100.utf8转换为<word_id, 
+   vector>形式,生成wiki_100.txt
    
 4、preparation.py: 将训练样本切分为训练集relation_train.txt, 测试集relation_test.txt,
-验证集relation_valid.txt
+   验证集relation_valid.txt
 
 5、将上述文件放置在相应路径, 然后运行matchzoo下面的main.py进行训练
